@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>DASHBOARD</H1><br><br>
+
+    <div class="details content">
+      <h2><%= blog.username %></h2>
+     </div>
+     <form action="/users/<%=blog._id%>?_method=DELETE " method="post">
+        <button type="submit">DELETE</button>
+     </form>
+    
+</body>
+</html>

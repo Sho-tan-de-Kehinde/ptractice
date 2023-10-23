@@ -6,14 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+<!--- <h5><%= locals.users? user: "User" %></h5>  -->
+    <a href="/logout"> Logout</a>
     <H1>DASHBOARD</H1><br><br>
 
     <div class="details content">
-      <h2><%= blog.username %></h2>
-     </div>
-     <form action="/users/<%=blog._id%>?_method=DELETE " method="post">
-        <button type="submit">DELETE</button>
-     </form>
-    
+      
 </body>
 </html>

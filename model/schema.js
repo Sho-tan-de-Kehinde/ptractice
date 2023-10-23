@@ -9,10 +9,7 @@ const formSchema = new Schema({
         type: String,
         require: true,
     },
-    location:{
-        type: String,
-        require: true,
-    },
+    
     email:{
         type: String,
         require: true,

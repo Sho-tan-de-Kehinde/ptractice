@@ -9,14 +9,17 @@ const formSchema = new Schema({
         type: String,
         require: true,
     },
-    location:{
-        type: String,
-        require: true,
-    },
+    
     email:{
         type: String,
         require: true,
     },
+
+    taskName:{
+        type: String,
+        
+    },
+
 }, {timestamp: true})
-const Model = mongoose.model('practice', formSchema)
+const Model = mongoose.model('task-manager', formSchema)
 module.exports = Model;

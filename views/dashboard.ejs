@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style3.css" />
+    <link rel="stylesheet" href="/style2.css" />
 </head>
 <body>
-    <H1>DASHBOARD</H1><br><br>
-
-    <div class="details content">
-      <h2><%= blog.username %></h2>
+    <header>
+        <div class="brand"><a href="#">TASK MANAGER</a></div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/users">Sign up</a></li>
+                <li><a href="/login">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="dash-title">
+       <h5><%= user %></h5> 
+       <h1>Personalied Dashboard</h1><br><br> 
+       <a href="/logout"> Logout</a>
      </div>
-     <form action="/users/<%=blog._id%>?_method=DELETE " method="post">
-        <button type="submit">DELETE</button>
-     </form>
-    
+     <div class="task-container">
+        <h4>Task Manager</h4>
+        <form action="task" method="post" class="task-input">
+            <input type="text" name="taskName" placeholder="e.g. wash dishes"> <button type="submit">submit</button>
+       </form>
+       </div>
+              
 </body>
 </html>

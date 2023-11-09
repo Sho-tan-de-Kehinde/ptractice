@@ -1,0 +1,9 @@
+body{
+    background-color: white;
+}
+.taskResult{
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    outline: solid 1px black; 
+}

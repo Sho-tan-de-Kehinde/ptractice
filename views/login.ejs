@@ -1,18 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
-</head>
-<body>
-  <header>
-    
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style2.css" />
+  </head>
+  <body>
+     <header>
     <div class="brand"><a href="#">TASK MANAGER</a></div>
-
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
@@ -21,17 +18,18 @@
         </ul>
     </nav>
 </header>
-
     <div class="container">
       <div class="center">
-          <h1>Sign up</h1>
-          <form action="/register" method="POST">
-            <label for="username" >Username<input type="text" name="username"><br></label><br>
+          <h1>Login into personalised DB</h1>
+          <form action="/log" method="post">
             <label for="email">E-mail<input type="text" name="email"><br></label><br>
             <label for="password">Password<input type="password" name="password"><br></label><br>
             <button type="submit">Submit</button>  
-              
+              <div class="signup_link">
+                  Not a Member ? <a href="/user">Signup</a>
+              </div>
           </form>
-
-</body>
+      </div>
+    </div>
+  </body>
 </html>

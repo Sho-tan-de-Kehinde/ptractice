@@ -16,7 +16,11 @@ header {
     justify-content: space-between;
     padding: 1.1rem 5rem;
     background: linear-gradient(180deg, #6fb4fd 0%, #5caafc 100%);
+<<<<<<< HEAD
     /* margin-bottom: 40px; */
+=======
+    margin-bottom: 40px;
+>>>>>>> 291e0b388ef1d4f65e8e0bb756299f8f9a0d674e
 }
 
 .brand a {
